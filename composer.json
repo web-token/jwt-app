@@ -1,0 +1,36 @@
+{
+    "name": "web-token/jwt-app",
+    "description": "JWT Application.",
+    "type": "application",
+    "license": "MIT",
+    "keywords": ["JWS", "JWT", "JWE", "JWA", "JWK", "JWKSet", "Jot", "Jose", "RFC7515", "RFC7516", "RFC7517", "RFC7518", "RFC7519", "RFC7520", "Bundle", "Symfony"],
+    "homepage": "https://github.com/web-token/jwt-app",
+    "authors": [
+        {
+            "name": "Florent Morselli",
+            "homepage": "https://github.com/Spomky"
+        },{
+            "name": "All contributors",
+            "homepage": "https://github.com/web-token/jwt-app/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jose\\Component\\Console\\":  "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "web-token/jwt-framework": "^1.0@dev",
+        "php-http/guzzle6-adapter": "^1.1.1",
+        "bjeavons/zxcvbn-php": "^0.3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

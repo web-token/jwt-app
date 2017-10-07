@@ -1,0 +1,26 @@
+{
+  "algorithm": "OPENSSL",
+  "chmod": "0755",
+  "compression": "GZ",
+  "files": [
+    "LICENSE"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": [
+        "tests",
+        "Tests",
+        "test",
+        "Test"
+      ],
+      "in": ["src","vendor"]
+    }
+  ],
+  "git-version": "package_version",
+  "intercept": true,
+  "key": ".travis/phar-private.pem",
+  "main": "bin/jose",
+  "output": "jose.phar",
+  "stub": true
+}
