@@ -21,7 +21,10 @@
     },
     "require": {
         "php": "^7.1",
-        "web-token/jwt-framework": "^1.0@dev",
+        "web-token/jwt-core": "^1.0@dev",
+        "web-token/jwt-console": "^1.0@dev",
+        "web-token/jwt-key-mgmt": "^1.0@dev",
+        "padraic/phar-updater": "^1.0",
         "php-http/guzzle6-adapter": "^1.1.1",
         "bjeavons/zxcvbn-php": "^0.3"
     },
