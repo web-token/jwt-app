@@ -27,8 +27,7 @@
         "padraic/phar-updater": "^1.0",
         "php-http/message-factory": "^1.0",
         "php-http/httplug": "^1.1",
-        "php-http/guzzle6-adapter": "^1.1.1",
-        "bjeavons/zxcvbn-php": "^0.3"
+        "php-http/guzzle6-adapter": "^1.1.1"
     },
     "extra": {
         "branch-alias": {
