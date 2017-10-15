@@ -7,7 +7,7 @@ require __DIR__.'/../vendor/autoload.php';
 
 use Jose\Component\Console;
 use Symfony\Component\Console\Application;
-use Jose\Component\Core\Converter\StandardJsonConverter;
+use Jose\Component\Core\Converter\JsonConverter;
 use Jose\Component\KeyManagement\KeyAnalyzer;
 use Jose\Component\KeyManagement\X5UFactory;
 use Jose\Component\KeyManagement\JKUFactory;
@@ -39,7 +39,7 @@ final class MessageFactory implements Psr7MessageFactory
     }
 }
 
-$jsonConverter = new StandardJsonConverter();
+$jsonConverter = new JsonConverter();
 $httpClient = new Client();
 $messageFactory = new MessageFactory();
 $jwkAnalyzerManager = new JWKAnalyzerManager();
