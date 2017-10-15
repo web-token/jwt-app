@@ -41,7 +41,7 @@ final class UpdateCommand extends Command
     {
         $updater = new Updater();
         $updater->setStrategy(Updater::STRATEGY_GITHUB);
-        $updater->getStrategy()->setPackageName('web-token/jwt-framework');
+        $updater->getStrategy()->setPackageName('web-token/jwt-app');
         $updater->getStrategy()->setPharName('jose');
         $updater->getStrategy()->setCurrentLocalVersion('1.0.0');
 
