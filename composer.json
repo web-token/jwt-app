@@ -21,9 +21,7 @@
     },
     "require": {
         "php": "^7.1",
-        "web-token/jwt-core": "^1.0@dev",
-        "web-token/jwt-console": "^1.0@dev",
-        "web-token/jwt-key-mgmt": "^1.0@dev",
+        "web-token/jwt-console": "^0.0",
         "padraic/phar-updater": "^1.0",
         "php-http/message-factory": "^1.0",
         "php-http/httplug": "^1.1",
