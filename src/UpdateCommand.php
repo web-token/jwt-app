@@ -41,7 +41,7 @@ final class UpdateCommand extends Command
     {
         $updater = new Updater();
         $updater->getStrategy()->setPharUrl('https://github.com/web-token/jwt-app/raw/gh-pages/jose.phar');
-        $updater->getStrategy()->setVersionUrl('https://github.com/web-token/jwt-app/raw/gh-pages/jose.phar.pubkey');
+        $updater->getStrategy()->setVersionUrl('https://github.com/web-token/jwt-app/raw/gh-pages/jose.phar.version');
 
         try {
             $result = $updater->update();
