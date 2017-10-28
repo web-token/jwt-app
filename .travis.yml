@@ -18,6 +18,9 @@ before_install:
   - phpenv config-rm xdebug.ini
   - composer self-update
 
+script:
+  - echo "No test.\n"
+
 install:
   - travis_retry composer install --no-interaction --no-dev --optimize-autoloader --classmap-authoritative
   - composer info -i

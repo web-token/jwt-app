@@ -40,10 +40,8 @@ final class UpdateCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $updater = new Updater();
-        $updater->setStrategy(Updater::STRATEGY_GITHUB);
-        $updater->getStrategy()->setPackageName('web-token/jwt-app');
-        $updater->getStrategy()->setPharName('jose');
-        $updater->getStrategy()->setCurrentLocalVersion('1.0.0');
+        $updater->getStrategy()->setPharUrl('https://github.com/web-token/jwt-app/blob/gh-pages/jose.phar');
+        $updater->getStrategy()->setVersionUrl('https://github.com/web-token/jwt-app/blob/gh-pages/jose.phar.version');
 
         try {
             $result = $updater->update();
