@@ -43,12 +43,12 @@ final class RollbackCommand extends Command
 
         try {
             if (!$updater->rollback()) {
-                $output->write('Failure!');
+                $output->writeln('Failure!');
             } else {
-                $output->write('Success!');
+                $output->writeln('Success!');
             }
         } catch (\Exception $e) {
-            $output->write('Well, something happened! Either an oopsie or something involving hackers.');
+            $output->writeln('Something went wrong during the rollback process. Maybe the old version does not exist anymore.');
         }
     }
 }

@@ -48,12 +48,12 @@ final class UpdateCommand extends Command
             if ($result) {
                 $new = $updater->getNewVersion();
                 $old = $updater->getOldVersion();
-                $output->write(sprintf('Updated from %s to %s', $old, $new));
+                $output->writeln(sprintf('Updated from %s to %s', $old, $new));
             } else {
-                $output->write('Already up-to-date.');
+                $output->writeln('Already up-to-date.');
             }
         } catch (\Exception $e) {
-            $output->write('Something went wrong during the update.');
+            $output->writeln('Something went wrong during the update.');
         }
     }
 }
