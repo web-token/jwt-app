@@ -20,7 +20,7 @@
   "git-version": "package_version",
   "intercept": true,
   "key": ".travis/phar-private.pem",
-  "main": "bin/jose",
+  "main": "app/jose",
   "output": "jose.phar",
   "stub": true
 }
