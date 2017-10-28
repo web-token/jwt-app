@@ -19,7 +19,7 @@ foreach ($files as $file) {
         continue;
     }
 
-    if (version_compare($file['version'], '2.6.0', '>=')) {
+    if (version_compare($file['version'], '2.7.5', '>=')) {
         echo $file['url'];
         exit(0);
     }
