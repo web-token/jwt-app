@@ -25,8 +25,7 @@ chmod 755 box.phar
 # Without the following step, we cannot checkout the gh-pages branch due to
 # file conflicts:
 mv jose.phar jose.phar.tmp
-rm box.phar
-rm -rf vendor
+reset --hard HEAD
 
 # Checkout gh-pages and add PHAR file and version:
 git checkout -b gh-pages deploy/gh-pages
