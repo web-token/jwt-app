@@ -12,7 +12,7 @@ git config --global user.email "florent+git@morselli.fr"
 git config --global user.name "Florent Morselli"
 
 # Add SSH-based remote to GitHub repo:
-git remote add deploy git@github.com:weierophinney/component-installer.git
+git remote add deploy git@github.com:web-token/jwt-app.git
 git fetch deploy
 
 # Get box and build PHAR
