@@ -17,6 +17,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use Http\Message\MessageFactory as Psr7MessageFactory;
 
+if (version_compare(PHP_VERSION, '7.1.0', '<')) {
+    file_put_contents('php://stderr', sprintf(
+        'This application requires PHP 7.1 version or higher and your system has'.PHP_EOL.
+        'PHP %s version installed'.PHP_EOL.PHP_EOL.
+        'To solve this issue, upgrade your PHP installation.'.PHP_EOL,
+        PHP_VERSION
+    ));
+
+    exit(1);
+}
+
 /**
  * Class MessageFactory.
  */
@@ -54,6 +65,7 @@ $jwkAnalyzerManager
 
 $application = new Application('Jose', '@package_version@');
 $application->add(new Console\OctKeyGeneratorCommand($jsonConverter));
+$application->add(new Console\PublicKeyCommand($jsonConverter));
 $application->add(new Console\RsaKeyGeneratorCommand($jsonConverter));
 $application->add(new Console\EcKeyGeneratorCommand($jsonConverter));
 $application->add(new Console\OkpKeyGeneratorCommand($jsonConverter));
