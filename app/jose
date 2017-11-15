@@ -7,11 +7,11 @@ require __DIR__.'/../vendor/autoload.php';
 
 use Jose\Component\Console;
 use Symfony\Component\Console\Application;
-use Jose\Component\Core\Converter\JsonConverter;
+use Jose\Component\Core\Converter\StandardConverter;
 use Jose\Component\KeyManagement\KeyAnalyzer;
 use Jose\Component\KeyManagement\X5UFactory;
 use Jose\Component\KeyManagement\JKUFactory;
-use Jose\Component\KeyManagement\KeyAnalyzer\JWKAnalyzerManager;
+use Jose\Component\KeyManagement\KeyAnalyzer\KeyAnalyzerManager;
 use Http\Adapter\Guzzle6\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
@@ -50,10 +50,10 @@ final class MessageFactory implements Psr7MessageFactory
     }
 }
 
-$jsonConverter = new JsonConverter();
+$jsonConverter = new StandardConverter();
 $httpClient = new Client();
 $messageFactory = new MessageFactory();
-$jwkAnalyzerManager = new JWKAnalyzerManager();
+$jwkAnalyzerManager = new KeyAnalyzerManager();
 $jwkAnalyzerManager
     ->add(new KeyAnalyzer\AlgorithmAnalyzer())
     ->add(new KeyAnalyzer\UsageAnalyzer())

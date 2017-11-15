@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "241b429e7a4271076c5405fd558fe6da",
+    "content-hash": "2b5899d22243dd54c9fe9ba973fe4a30",
     "packages": [
         {
             "name": "fgrosse/phpasn1",
@@ -1044,22 +1044,22 @@
         },
         {
             "name": "web-token/jwt-console",
-            "version": "v0.1.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-console.git",
-                "reference": "4633210cc097aafc030a7960b1158644e7dde3f3"
+                "reference": "5478df400cc2a14290f0efce446521098970df49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-console/zipball/4633210cc097aafc030a7960b1158644e7dde3f3",
-                "reference": "4633210cc097aafc030a7960b1158644e7dde3f3",
+                "url": "https://api.github.com/repos/web-token/jwt-console/zipball/5478df400cc2a14290f0efce446521098970df49",
+                "reference": "5478df400cc2a14290f0efce446521098970df49",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1",
                 "symfony/console": "^3.3",
-                "web-token/jwt-key-mgmt": "^0.1"
+                "web-token/jwt-key-mgmt": "^0.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.0"
@@ -1067,7 +1067,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-master": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -1109,20 +1109,20 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2017-11-13T20:14:41+00:00"
+            "time": "2017-11-15T21:06:46+00:00"
         },
         {
             "name": "web-token/jwt-core",
-            "version": "v0.1.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-core.git",
-                "reference": "5cf71977256187979f7330e93070a478e0d9ec4a"
+                "reference": "fee5f5421431d6efdb92a08c544af80827f93b88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/5cf71977256187979f7330e93070a478e0d9ec4a",
-                "reference": "5cf71977256187979f7330e93070a478e0d9ec4a",
+                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/fee5f5421431d6efdb92a08c544af80827f93b88",
+                "reference": "fee5f5421431d6efdb92a08c544af80827f93b88",
                 "shasum": ""
             },
             "require": {
@@ -1138,7 +1138,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-master": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -1180,31 +1180,32 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2017-11-13T20:27:16+00:00"
+            "time": "2017-11-15T20:33:14+00:00"
         },
         {
             "name": "web-token/jwt-key-mgmt",
-            "version": "v0.1.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-key-mgmt.git",
-                "reference": "fd91b64ea68ab7c3f9b91f32ed257504ebff5094"
+                "reference": "823b58226b518b79763685bf6a665f72ecb9e4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/fd91b64ea68ab7c3f9b91f32ed257504ebff5094",
-                "reference": "fd91b64ea68ab7c3f9b91f32ed257504ebff5094",
+                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/823b58226b518b79763685bf6a665f72ecb9e4ae",
+                "reference": "823b58226b518b79763685bf6a665f72ecb9e4ae",
                 "shasum": ""
             },
             "require": {
                 "lib-openssl": "*",
                 "paragonie/sodium_compat": "^1.1",
                 "php": "^7.1",
-                "web-token/jwt-core": "^0.1"
+                "web-token/jwt-core": "^0.2"
             },
             "require-dev": {
                 "php-http/httplug": "^1.1",
                 "php-http/message-factory": "^1.0",
+                "php-http/mock-client": "^1.0",
                 "phpunit/phpunit": "^6.0"
             },
             "suggest": {
@@ -1214,7 +1215,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-master": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -1256,7 +1257,7 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2017-11-13T20:27:16+00:00"
+            "time": "2017-11-15T20:33:14+00:00"
         }
     ],
     "packages-dev": [],
