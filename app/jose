@@ -15,7 +15,7 @@ use Jose\Component\KeyManagement\KeyAnalyzer\KeyAnalyzerManager;
 use Http\Adapter\Guzzle6\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use Http\Message\MessageFactory as Psr7MessageFactory;
+use Http\Message\RequestFactory as Psr7RequestFactory;
 
 if (version_compare(PHP_VERSION, '7.1.0', '<')) {
     file_put_contents('php://stderr', sprintf(
@@ -29,9 +29,9 @@ if (version_compare(PHP_VERSION, '7.1.0', '<')) {
 }
 
 /**
- * Class MessageFactory.
+ * Class RequestFactory.
  */
-final class MessageFactory implements Psr7MessageFactory
+final class RequestFactory implements Psr7RequestFactory
 {
     /**
      * {@inheritdoc}
@@ -52,7 +52,7 @@ final class MessageFactory implements Psr7MessageFactory
 
 $jsonConverter = new StandardConverter();
 $httpClient = new Client();
-$messageFactory = new MessageFactory();
+$requestFactory = new RequestFactory();
 $jwkAnalyzerManager = new KeyAnalyzerManager();
 $jwkAnalyzerManager
     ->add(new KeyAnalyzer\AlgorithmAnalyzer())
@@ -86,8 +86,8 @@ $application->add(new Console\AddKeyIntoKeysetCommand($jsonConverter));
 $application->add(new Console\OptimizeRsaKeyCommand($jsonConverter));
 $application->add(new Console\KeyAnalyzerCommand($jwkAnalyzerManager, $jsonConverter));
 $application->add(new Console\KeysetAnalyzerCommand($jwkAnalyzerManager, $jsonConverter));
-$application->add(new Console\X5ULoaderCommand(new X5UFactory($jsonConverter, $httpClient, $messageFactory), $jsonConverter));
-$application->add(new Console\JKULoaderCommand(new JKUFactory($jsonConverter, $httpClient, $messageFactory), $jsonConverter));
+$application->add(new Console\X5ULoaderCommand(new X5UFactory($jsonConverter, $httpClient, $requestFactory), $jsonConverter));
+$application->add(new Console\JKULoaderCommand(new JKUFactory($jsonConverter, $httpClient, $requestFactory), $jsonConverter));
 
 $application->add(new Console\PemConverterCommand($jsonConverter));
 
