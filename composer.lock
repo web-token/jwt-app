@@ -942,7 +942,7 @@
         },
         {
             "name": "web-token/jwt-console",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-console.git",
@@ -1011,16 +1011,16 @@
         },
         {
             "name": "web-token/jwt-core",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-core.git",
-                "reference": "af5c1e198aebf12a94445248b6de67c3f85a7714"
+                "reference": "08c8db3d1b88e8e36177834d6086ee6501459289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/af5c1e198aebf12a94445248b6de67c3f85a7714",
-                "reference": "af5c1e198aebf12a94445248b6de67c3f85a7714",
+                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/08c8db3d1b88e8e36177834d6086ee6501459289",
+                "reference": "08c8db3d1b88e8e36177834d6086ee6501459289",
                 "shasum": ""
             },
             "require": {
@@ -1081,25 +1081,25 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2017-11-26T09:16:23+00:00"
+            "time": "2017-12-03T08:26:14+00:00"
         },
         {
             "name": "web-token/jwt-key-mgmt",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-key-mgmt.git",
-                "reference": "cb546d9aaec7820974ca14390d13e6c6b927c0dc"
+                "reference": "65b9de70fa3132734083ccc8cde2166d358bf48b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/cb546d9aaec7820974ca14390d13e6c6b927c0dc",
-                "reference": "cb546d9aaec7820974ca14390d13e6c6b927c0dc",
+                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/65b9de70fa3132734083ccc8cde2166d358bf48b",
+                "reference": "65b9de70fa3132734083ccc8cde2166d358bf48b",
                 "shasum": ""
             },
             "require": {
                 "lib-openssl": "*",
-                "paragonie/sodium_compat": "^1.1",
+                "paragonie/sodium_compat": "^1.2",
                 "php": "^7.1",
                 "web-token/jwt-core": "^0.5"
             },
@@ -1158,7 +1158,7 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2017-11-26T12:26:07+00:00"
+            "time": "2017-12-02T22:14:37+00:00"
         }
     ],
     "packages-dev": [],
