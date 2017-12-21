@@ -7,7 +7,23 @@ If you really love that project, then you can help me out for a couple of :beers
 
 --- 
 
+# Documentation
+
+The official documentation is available as https://web-token.spomky-labs.com/
+
 # Installation
+
+```sh
+curl -OL https://github.com/web-token/jwt-app/raw/gh-pages/jose.phar
+curl -OL https://github.com/web-token/jwt-app/raw/gh-pages/jose.phar.pubkey
+```
+
+If everything is fine, you should have two files:
+
+* jose.phar
+* jose.phar.pubkey
+
+You can move these files wherever you want (e.g. /usr/local/bin).
 
 # Contributing
 
