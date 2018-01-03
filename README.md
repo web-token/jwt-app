@@ -7,6 +7,8 @@ If you really love that project, then you can help me out for a couple of :beers
 
 --- 
 
+[![Dependency Status](https://beta.gemnasium.com/badges/github.com/web-token/jwt-app.svg)](https://beta.gemnasium.com/projects/github.com/web-token/jwt-app)
+
 # Documentation
 
 The official documentation is available as https://web-token.spomky-labs.com/
