@@ -64,6 +64,7 @@ $jwkAnalyzerManager
 ;
 
 $application = new Application('Jose', '@package_version@');
+$application->add(new Console\SecretKeyGeneratorCommand($jsonConverter));
 $application->add(new Console\OctKeyGeneratorCommand($jsonConverter));
 $application->add(new Console\PublicKeyCommand($jsonConverter));
 $application->add(new Console\RsaKeyGeneratorCommand($jsonConverter));
