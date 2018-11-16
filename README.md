@@ -1,14 +1,6 @@
 PHP JOSE Application
 ==================
 
-If you really love that project, then you can help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/Spomky-Labs/jose/badge.svg?style=beer-square)](https://beerpay.io/Spomky-Labs/jose)  [![Beerpay](https://beerpay.io/Spomky-Labs/jose/make-wish.svg?style=flat-square)](https://beerpay.io/Spomky-Labs/jose?focus=wish)
-
---- 
-
-[![Dependency Status](https://beta.gemnasium.com/badges/github.com/web-token/jwt-app.svg)](https://beta.gemnasium.com/projects/github.com/web-token/jwt-app)
-
 # Documentation
 
 The official documentation is available as https://web-token.spomky-labs.com/
@@ -26,6 +18,14 @@ If everything is fine, you should have two files:
 * jose.phar.pubkey
 
 You can move these files wherever you want (e.g. /usr/local/bin).
+
+# Support
+
+I bring solutions to your problems and answer your questions.
+
+If you really love that project and the work I have done or if you want I prioritize your issues, then you can help me out for a couple of :beers: or more!
+
+[![Become a Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/FlorentMorselli)
 
 # Contributing
 
