@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "8afa52cd417f4ec417b4bfe86b68106538a87660"
+                "reference": "558f321c52faeb4828c03e7dc0cfe39a09e09a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8afa52cd417f4ec417b4bfe86b68106538a87660",
-                "reference": "8afa52cd417f4ec417b4bfe86b68106538a87660",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/558f321c52faeb4828c03e7dc0cfe39a09e09a2d",
+                "reference": "558f321c52faeb4828c03e7dc0cfe39a09e09a2d",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2018-10-18T06:09:13+00:00"
+            "time": "2019-01-28T09:30:10+00:00"
         },
         {
             "name": "fgrosse/phpasn1",
@@ -482,21 +482,21 @@
         },
         {
             "name": "paragonie/sodium_compat",
-            "version": "v1.8.1",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/sodium_compat.git",
-                "reference": "57bb5ef079d3724148da3d5c99e30695ab17afda"
+                "reference": "87125d5b265f98c4d1b8d83a1f0726607c229421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/57bb5ef079d3724148da3d5c99e30695ab17afda",
-                "reference": "57bb5ef079d3724148da3d5c99e30695ab17afda",
+                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/87125d5b265f98c4d1b8d83a1f0726607c229421",
+                "reference": "87125d5b265f98c4d1b8d83a1f0726607c229421",
                 "shasum": ""
             },
             "require": {
                 "paragonie/random_compat": ">=1",
-                "php": "^5.2.4|^5.3|^5.4|^5.5|^5.6|^7"
+                "php": "^5.2.4|^5.3|^5.4|^5.5|^5.6|^7|^8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^3|^4|^5"
@@ -560,7 +560,7 @@
                 "secret-key cryptography",
                 "side-channel resistant"
             ],
-            "time": "2019-01-03T21:00:55+00:00"
+            "time": "2019-03-20T17:19:05+00:00"
         },
         {
             "name": "php-http/guzzle6-adapter",
@@ -922,16 +922,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.2.1",
+            "version": "v4.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0"
+                "reference": "e2840bb38bddad7a0feaf85931e38fdcffdb2f81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/4dff24e5d01e713818805c1862d2e3f901ee7dd0",
-                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0",
+                "url": "https://api.github.com/repos/symfony/console/zipball/e2840bb38bddad7a0feaf85931e38fdcffdb2f81",
+                "reference": "e2840bb38bddad7a0feaf85931e38fdcffdb2f81",
                 "shasum": ""
             },
             "require": {
@@ -943,6 +943,9 @@
                 "symfony/dependency-injection": "<3.4",
                 "symfony/process": "<3.3"
             },
+            "provide": {
+                "psr/log-implementation": "1.0"
+            },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.4|~4.0",
@@ -952,7 +955,7 @@
                 "symfony/process": "~3.4|~4.0"
             },
             "suggest": {
-                "psr/log-implementation": "For using the console logger",
+                "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
                 "symfony/lock": "",
                 "symfony/process": ""
@@ -987,7 +990,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-27T07:40:44+00:00"
+            "time": "2019-04-08T14:23:48+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -1059,16 +1062,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.10.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fe5e94c604826c35a32fa832f35bd036b6799609",
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609",
                 "shasum": ""
             },
             "require": {
@@ -1080,7 +1083,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -1114,25 +1117,25 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-09-21T13:07:52+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "web-token/jwt-console",
-            "version": "v1.2.4",
+            "version": "v1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-console.git",
-                "reference": "8326ea2a53e664771785060f924bc3440e81162e"
+                "reference": "d44fc9b2d4ab64a9e7670429d456660e4eccd0c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-console/zipball/8326ea2a53e664771785060f924bc3440e81162e",
-                "reference": "8326ea2a53e664771785060f924bc3440e81162e",
+                "url": "https://api.github.com/repos/web-token/jwt-console/zipball/d44fc9b2d4ab64a9e7670429d456660e4eccd0c9",
+                "reference": "d44fc9b2d4ab64a9e7670429d456660e4eccd0c9",
                 "shasum": ""
             },
             "require": {
                 "symfony/console": "^3.3|^4.0",
-                "web-token/jwt-key-mgmt": "^1.2"
+                "web-token/jwt-key-mgmt": "^1.3"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.0|^7.0"
@@ -1140,7 +1143,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1182,20 +1185,20 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2018-11-14T12:21:21+00:00"
+            "time": "2019-04-21T22:05:56+00:00"
         },
         {
             "name": "web-token/jwt-core",
-            "version": "v1.2.4",
+            "version": "v1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-core.git",
-                "reference": "9ae6d04c3906f06d05d77788dd247706cb27b656"
+                "reference": "c44965a66ad22db6cad6cbdc64e6526d68c8c48f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/9ae6d04c3906f06d05d77788dd247706cb27b656",
-                "reference": "9ae6d04c3906f06d05d77788dd247706cb27b656",
+                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/c44965a66ad22db6cad6cbdc64e6526d68c8c48f",
+                "reference": "c44965a66ad22db6cad6cbdc64e6526d68c8c48f",
                 "shasum": ""
             },
             "require": {
@@ -1214,7 +1217,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1256,27 +1259,27 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2018-11-14T12:21:21+00:00"
+            "time": "2019-04-22T19:18:56+00:00"
         },
         {
             "name": "web-token/jwt-key-mgmt",
-            "version": "v1.2.4",
+            "version": "v1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-key-mgmt.git",
-                "reference": "8760d0855410fb2d418cfe9c6b1f3cb636ab2b89"
+                "reference": "dc71d0ab631ca2a025d0c111dfd47bf468ce3678"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/8760d0855410fb2d418cfe9c6b1f3cb636ab2b89",
-                "reference": "8760d0855410fb2d418cfe9c6b1f3cb636ab2b89",
+                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/dc71d0ab631ca2a025d0c111dfd47bf468ce3678",
+                "reference": "dc71d0ab631ca2a025d0c111dfd47bf468ce3678",
                 "shasum": ""
             },
             "require": {
                 "lib-openssl": "*",
                 "paragonie/sodium_compat": "^1.2",
-                "web-token/jwt-core": "^1.2",
-                "web-token/jwt-util-ecc": "^1.2"
+                "web-token/jwt-core": "^1.3",
+                "web-token/jwt-util-ecc": "^1.3"
             },
             "require-dev": {
                 "php-http/httplug": "^1.1",
@@ -1291,7 +1294,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1333,20 +1336,20 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2019-01-04T20:54:18+00:00"
+            "time": "2019-04-21T22:05:56+00:00"
         },
         {
             "name": "web-token/jwt-util-ecc",
-            "version": "v1.2.4",
+            "version": "v1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-util-ecc.git",
-                "reference": "f517d9a09eeab90a43f099dd6ae80d1549bedabb"
+                "reference": "463370e8e96fb6a4916a41f854ec60db090cc367"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-util-ecc/zipball/f517d9a09eeab90a43f099dd6ae80d1549bedabb",
-                "reference": "f517d9a09eeab90a43f099dd6ae80d1549bedabb",
+                "url": "https://api.github.com/repos/web-token/jwt-util-ecc/zipball/463370e8e96fb6a4916a41f854ec60db090cc367",
+                "reference": "463370e8e96fb6a4916a41f854ec60db090cc367",
                 "shasum": ""
             },
             "require": {
@@ -1360,7 +1363,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -1402,7 +1405,7 @@
                 "jwt",
                 "symfony"
             ],
-            "time": "2018-11-14T12:21:21+00:00"
+            "time": "2019-04-21T22:05:56+00:00"
         }
     ],
     "packages-dev": [],
