@@ -24,7 +24,8 @@
         "nyholm/psr7": "^1.0",
         "padraic/phar-updater": "^1.0",
         "php-http/curl-client": "^2.0",
-        "web-token/jwt-console": "^2.0"
+        "web-token/jwt-console": "^2.0",
+        "web-token/jwt-util-ecc": "^2.2"
     },
     "extra": {
         "branch-alias": {
