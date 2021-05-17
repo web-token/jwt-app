@@ -8,7 +8,7 @@ chmod 600 .travis/build-key.pem
 ssh-add .travis/build-key.pem
 
 # Setup git defaults:
-git config --global user.email "florent+git@morselli.fr"
+git config --global user.email "contact@spomky-labs.com"
 git config --global user.name "Florent Morselli"
 
 # Add SSH-based remote to GitHub repo:
