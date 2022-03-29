@@ -21,8 +21,8 @@ fi
 box validate || exit 1
 box compile  || exit 1
 
-if [ ! -f "./example.phar" ] || [ ! -x "./example.phar" ]; then
-  (>&2 echo "Something went wrong when building example.phar")
+if [ ! -f "./jose.phar" ] || [ ! -x "./jose.phar" ]; then
+  (>&2 echo "Something went wrong when building jose.phar")
   (>&2 echo "Aborting.")
   exit 1
 fi
