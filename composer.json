@@ -20,19 +20,20 @@
         }
     },
     "require": {
-        "php": "^7.2",
+        "php": "^8.1",
         "nyholm/psr7": "^1.0",
-        "padraic/phar-updater": "^1.0",
         "php-http/curl-client": "^2.0",
-        "web-token/jwt-console": "^2.0",
-        "web-token/jwt-util-ecc": "^2.2"
+        "web-token/jwt-console": "^3.0",
+        "web-token/jwt-util-ecc": "^3.0"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     },
+    "prefer-stable": true,
     "config": {
+        "optimize-autoloader": true,
+        "platform": {},
+        "preferred-install": "dist",
         "sort-packages": true
     }
 }

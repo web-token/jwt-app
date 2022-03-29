@@ -13,9 +13,9 @@ use Jose\Component\KeyManagement\X5UFactory;
 use Jose\Component\KeyManagement\JKUFactory;
 use Nyholm\Psr7\Factory\Psr17Factory;
 
-if (version_compare(PHP_VERSION, '7.2.0', '<')) {
+if (PHP_VERSION_ID < 80100) {
     file_put_contents('php://stderr', sprintf(
-        'This application requires PHP 7.2 version or higher and your system has'.PHP_EOL.
+        'This application requires PHP 8.1 version or higher and your system has'.PHP_EOL.
         'PHP %s version installed'.PHP_EOL.PHP_EOL.
         'To solve this issue, upgrade your PHP installation.'.PHP_EOL,
         PHP_VERSION
@@ -74,8 +74,5 @@ $application->add(new Console\JKULoaderCommand(new JKUFactory($httpClient, $requ
 $application->add(new Console\PemConverterCommand());
 
 $application->add(new Console\GetThumbprintCommand());
-
-$application->add(new Console\UpdateCommand());
-$application->add(new Console\RollbackCommand());
 
 $application->run();
